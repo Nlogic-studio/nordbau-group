@@ -9,14 +9,22 @@
         content="Ihr Partner für Hochbau, Tiefbau und Sanierung. Mit jahrelanger Erfahrung und einem engagierten Team setzen wir Maßstäbe in der Baubranche.">
     <link rel="canonical" href="https://nordbau-group.de/" />
     <link rel="alternate" hreflang="de" href="https://nordbau-group.de/" />
-    <link rel="alternate" hreflang="en" href="https://nordbau-group.de/en/" />
-  <script type="module" crossorigin src="/assets/index-D-vgZU2Z.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CoEEy2ID.css">
+    <link rel="alternate" hreflang="en" href="https://nordbau-group.de/en/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-DMgQj64v.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BMj0Q_Nv.css">
 </head>
 
-<body class="bg-nord-light text-nord-dark font-sans antialiased scroll-smooth">
+<body class="font-sans text-gray-800 antialiased overflow-x-hidden">
     <!-- Navbar -->
-    <nav class="bg-white shadow-md fixed w-full z-50">
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex-shrink-0 flex items-center">
@@ -72,122 +80,1046 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative bg-nord-dark h-screen flex items-center justify-center text-center px-4 overflow-hidden">
-        <!-- Overlay/Image Background could go here -->
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-nord-dark to-slate-900 opacity-95 z-0"></div>
-        <div
-            class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center mix-blend-overlay">
+    <section id="home" class="hero-bg h-screen flex items-center justify-center relative">
+        <div class="text-center px-4 max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+            <p class="text-secondary font-bold tracking-widest uppercase mb-4 text-sm md:text-base">
+                Building The Future Since 1998
+            </p>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+                Precision Construction. <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-yellow-200">Lasting
+                    Legacy.</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                From commercial skyscrapers to luxury residential estates,
+                we bring architectural visions to life with unwavering
+                quality and engineering excellence.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects"
+                    class="px-8 py-4 bg-secondary text-primary font-bold rounded hover:bg-white transition-all transform hover:-translate-y-1 shadow-lg shadow-secondary/20">
+                    View Our Work
+                </a>
+                <a href="#contact"
+                    class="px-8 py-4 border-2 border-white text-white font-bold rounded hover:bg-white hover:text-primary transition-all transform hover:-translate-y-1">
+                    Contact Us
+                </a>
+            </div>
         </div>
 
-        <div class="relative z-10 max-w-5xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight drop-shadow-lg"
-                data-i18n="hero.title">Qualität und Zuverlässigkeit am Bau</h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
-                data-i18n="hero.subtitle">Ihr Partner für Hochbau, Tiefbau und Sanierung.</p>
-            <a href="#contact"
-                class="inline-block bg-nord-blue text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-600 transition-all transform hover:-translate-y-1 hover:shadow-xl focus:ring-4 focus:ring-blue-300"
-                data-i18n="hero.cta">Projekt starten</a>
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-white opacity-70 hover:opacity-100">
+                <i class="fa-solid fa-chevron-down text-2xl"></i>
+            </a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-24 bg-gray-50">
+    <!-- Stats Section -->
+    <div class="bg-primary py-12 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-extrabold text-gray-900 mb-4" data-i18n="services.title">Unsere Leistungen</h2>
-                <div class="w-24 h-1 bg-nord-blue mx-auto"></div>
-            </div>
-
-            <div id="services-grid" class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Javascript will populate this, but pre-filled for SEO -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <h3 class="text-xl font-bold mb-2 text-nord-blue">Hochbau</h3>
-                    <p class="text-gray-600">Professionelle Umsetzung von Wohn- und Gewerbeprojekten.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div data-aos="fade-up" data-aos-delay="0">
+                    <div class="text-4xl font-bold text-white mb-2">
+                        15+
+                    </div>
+                    <div class="text-gray-400 text-sm uppercase tracking-wider">
+                        Years Experience
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <h3 class="text-xl font-bold mb-2 text-nord-blue">Tiefbau</h3>
-                    <p class="text-gray-600">Fundamente, Erdarbeiten und Infrastruktur.</p>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold text-white mb-2">
+                        150+
+                    </div>
+                    <div class="text-gray-400 text-sm uppercase tracking-wider">
+                        Projects Completed
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <h3 class="text-xl font-bold mb-2 text-nord-blue">Sanierung</h3>
-                    <p class="text-gray-600">Modernisierung und Werterhalt bestehender Gebäude.</p>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold text-white mb-2">
+                        40+
+                    </div>
+                    <div class="text-gray-400 text-sm uppercase tracking-wider">
+                        Expert Engineers
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold text-white mb-2">
+                        100%
+                    </div>
+                    <div class="text-gray-400 text-sm uppercase tracking-wider">
+                        Client Satisfaction
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- About Section -->
-    <section id="about" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-16">
-            <div class="md:w-1/2 w-full">
-                <div
-                    class="w-full h-96 bg-gray-200 rounded-2xl shadow-2xl flex items-center justify-center overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                        alt="Construction site"
-                        class="object-cover w-full h-full opacity-80 hover:scale-105 transition-transform duration-700">
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative" data-aos="fade-right">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-secondary rounded-tl-3xl z-0"></div>
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-br-3xl z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop"
+                        alt="Construction planning"
+                        class="relative z-10 w-full rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" />
+                </div>
+
+                <div data-aos="fade-left">
+                    <h4 class="text-secondary font-bold uppercase tracking-wider mb-2">
+                        About Nordbau Group
+                    </h4>
+                    <h2 class="text-4xl font-bold text-primary mb-6">
+                        We Don't Just Build Structures, <br />We Build
+                        Trust.
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Founded on the principles of integrity, innovation,
+                        and safety, Nordbau Group has established itself
+                        as a leader in the industry. We handle every aspect
+                        of the construction process with precision and care,
+                        ensuring your vision becomes a tangible reality.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Our team of certified professionals is dedicated to
+                        delivering projects on time and within budget,
+                        utilizing the latest technology and sustainable
+                        practices.
+                    </p>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-primary font-medium">
+                            <i class="fa-solid fa-check text-secondary mr-3"></i>
+                            Licensed & Insured Professionals
+                        </li>
+                        <li class="flex items-center text-primary font-medium">
+                            <i class="fa-solid fa-check text-secondary mr-3"></i>
+                            Top-Tier Safety Standards
+                        </li>
+                        <li class="flex items-center text-primary font-medium">
+                            <i class="fa-solid fa-check text-secondary mr-3"></i>
+                            Eco-Friendly Construction Methods
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="md:w-1/2 w-full">
-                <h2 class="text-4xl font-extrabold text-gray-900 mb-6" data-i18n="about.title">Über Nordbau</h2>
-                <p class="text-xl text-gray-600 leading-relaxed" data-i18n="about.desc">Mit jahrelanger Erfahrung und
-                    einem engagierten Team setzen wir Maßstäbe in der Baubranche.</p>
-                <div class="mt-8 grid grid-cols-2 gap-4">
-                    <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-nord-blue">
-                        <span class="block text-3xl font-bold text-nord-blue">25+</span>
-                        <span class="text-gray-600">Years Experience</span>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-accent relative overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.03]" style="
+                    background-image: radial-gradient(
+                        #000 1px,
+                        transparent 1px
+                    );
+                    background-size: 20px 20px;">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
+                <div class="inline-block mb-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="h-[2px] w-8 bg-secondary"></span>
+                        <span class="text-secondary font-bold uppercase tracking-widest text-sm">Our Expertise</span>
+                        <span class="h-[2px] w-8 bg-secondary"></span>
                     </div>
-                    <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-nord-blue">
-                        <span class="block text-3xl font-bold text-nord-blue">500+</span>
-                        <span class="text-gray-600">Projects Done</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-6">
+                    Constructing With
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-orange-500">Precision</span>
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    We combine decades of craftsmanship with modern
+                    engineering to deliver comprehensive solutions for any
+                    scale of project.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="group relative bg-white p-10 rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <!-- Hover Bottom Border -->
+                    <div
+                        class="absolute bottom-0 left-0 h-1.5 w-0 bg-secondary group-hover:w-full transition-all duration-500 ease-out">
+                    </div>
+
+                    <!-- Background Number -->
+                    <div
+                        class="absolute -bottom-4 -right-4 text-9xl font-black text-gray-50 group-hover:text-gray-100 group-hover:scale-110 transition-all duration-500 select-none z-0">
+                        01
+                    </div>
+
+                    <!-- Content -->
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-lg bg-gray-50 flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
+                            <i
+                                class="fa-solid fa-building text-3xl text-primary group-hover:text-secondary transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">
+                            Commercial Construction
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-6">
+                            From high-rise office complexes to retail
+                            centers, we build high-performance environments
+                            that drive business growth.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group relative bg-white p-10 rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute bottom-0 left-0 h-1.5 w-0 bg-secondary group-hover:w-full transition-all duration-500 ease-out">
+                    </div>
+                    <div
+                        class="absolute -bottom-4 -right-4 text-9xl font-black text-gray-50 group-hover:text-gray-100 group-hover:scale-110 transition-all duration-500 select-none z-0">
+                        02
+                    </div>
+
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-lg bg-gray-50 flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
+                            <i
+                                class="fa-solid fa-house-chimney text-3xl text-primary group-hover:text-secondary transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">
+                            Residential Development
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-6">
+                            Custom luxury estates and multi-unit housing. We
+                            turn blueprints into homes with unwavering
+                            attention to detail.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group relative bg-white p-10 rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="absolute bottom-0 left-0 h-1.5 w-0 bg-secondary group-hover:w-full transition-all duration-500 ease-out">
+                    </div>
+                    <div
+                        class="absolute -bottom-4 -right-4 text-9xl font-black text-gray-50 group-hover:text-gray-100 group-hover:scale-110 transition-all duration-500 select-none z-0">
+                        03
+                    </div>
+
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-lg bg-gray-50 flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
+                            <i
+                                class="fa-solid fa-compass-drafting text-3xl text-primary group-hover:text-secondary transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">
+                            Architecture & Design
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-6">
+                            Seamlessly integrating form and function. Our
+                            in-house architects ensure your vision is both
+                            beautiful and buildable.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group relative bg-white p-10 rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div
+                        class="absolute bottom-0 left-0 h-1.5 w-0 bg-secondary group-hover:w-full transition-all duration-500 ease-out">
+                    </div>
+                    <div
+                        class="absolute -bottom-4 -right-4 text-9xl font-black text-gray-50 group-hover:text-gray-100 group-hover:scale-110 transition-all duration-500 select-none z-0">
+                        04
+                    </div>
+
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-lg bg-gray-50 flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
+                            <i
+                                class="fa-solid fa-clipboard-check text-3xl text-primary group-hover:text-secondary transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">
+                            Project Management
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-6">
+                            End-to-end oversight ensuring timeline
+                            adherence, budget control, and quality assurance
+                            at every milestone.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="group relative bg-white p-10 rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute bottom-0 left-0 h-1.5 w-0 bg-secondary group-hover:w-full transition-all duration-500 ease-out">
+                    </div>
+                    <div
+                        class="absolute -bottom-4 -right-4 text-9xl font-black text-gray-50 group-hover:text-gray-100 group-hover:scale-110 transition-all duration-500 select-none z-0">
+                        05
+                    </div>
+
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-lg bg-gray-50 flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
+                            <i
+                                class="fa-solid fa-hammer text-3xl text-primary group-hover:text-secondary transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">
+                            Renovation & Restore
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-6">
+                            Revitalizing existing structures. We specialize
+                            in historical preservation and modernizing
+                            outdated facilities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="group relative bg-white p-10 rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="absolute bottom-0 left-0 h-1.5 w-0 bg-secondary group-hover:w-full transition-all duration-500 ease-out">
+                    </div>
+                    <div
+                        class="absolute -bottom-4 -right-4 text-9xl font-black text-gray-50 group-hover:text-gray-100 group-hover:scale-110 transition-all duration-500 select-none z-0">
+                        06
+                    </div>
+
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-lg bg-gray-50 flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-300">
+                            <i
+                                class="fa-solid fa-industry text-3xl text-primary group-hover:text-secondary transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">
+                            Industrial Infrastructure
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-6">
+                            Heavy-duty warehouses, distribution centers, and
+                            factories built to withstand intense operational
+                            demands.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-gradient-to-br from-nord-blue to-blue-900 text-white relative">
-        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <h2 class="text-4xl font-bold mb-6" data-i18n="contact.title">Kontaktieren Sie uns</h2>
-            <p class="text-xl text-blue-100 mb-12" data-i18n="contact.desc">Bereit für Ihr nächstes Projekt? Wir freuen
-                uns auf Sie.</p>
-            <form
-                class="bg-white text-gray-800 p-8 md:p-12 rounded-2xl shadow-2xl max-w-xl mx-auto transform hover:scale-[1.01] transition-transform duration-300">
-                <div class="mb-5">
-                    <label class="block text-left text-sm font-bold text-gray-700 mb-2">Name</label>
-                    <input type="text"
-                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-nord-blue focus:border-transparent transition-all bg-gray-50 focus:bg-white">
+    <!-- Featured Projects Section (The Core Requirement) -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-up">
+                <div>
+                    <h4 class="text-secondary font-bold uppercase tracking-wider mb-2">
+                        Our Portfolio
+                    </h4>
+                    <h2 class="text-4xl font-bold text-primary">
+                        Featured Projects
+                    </h2>
                 </div>
-                <div class="mb-5">
-                    <label class="block text-left text-sm font-bold text-gray-700 mb-2">Email</label>
-                    <input type="email"
-                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-nord-blue focus:border-transparent transition-all bg-gray-50 focus:bg-white">
+            </div>
+
+            <!-- Splide Carousel Structure -->
+            <div id="project-carousel" class="splide" aria-label="Featured Projects">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Project 1: High-rise Residence (Hamburg) -->
+                        <li class="splide__slide">
+                            <div
+                                class="project-card group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-96 mx-2">
+                                <img src="/images/building1.jpg" alt="Elbphilharmonie View"
+                                    class="w-full h-full object-cover transition-transform duration-700" />
+                                <div
+                                    class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+                                    <h3
+                                        class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                        Elb-Panorama
+                                    </h3>
+                                    <p
+                                        class="text-gray-300 mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                        Residential • Skyscraper
+                                    </p>
+                                    <span
+                                        class="text-secondary font-bold uppercase text-sm tracking-wider transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">View
+                                        Details</span>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                                    <h3 class="text-xl font-bold text-white">
+                                        Elb-Panorama
+                                    </h3>
+                                    <p class="text-gray-300 text-sm">
+                                        Hamburg, HafenCity
+                                    </p>
+                                </div>
+                                <!-- Details View -->
+                                <div
+                                    class="project-details absolute inset-0 bg-black/95 opacity-0 pointer-events-none transition-all duration-300 flex flex-col justify-center items-center p-6 text-center text-white">
+                                    <h3 class="text-xl font-bold text-secondary mb-6">Elb-Panorama</h3>
+                                    <div class="grid grid-cols-2 gap-4 text-sm mb-8 w-full max-w-xs">
+                                        <div class="text-gray-400">Year Built</div>
+                                        <div class="font-bold">2021</div>
+                                        <div class="text-gray-400">Area</div>
+                                        <div class="font-bold">45,000 m²</div>
+                                        <div class="text-gray-400">Floors</div>
+                                        <div class="font-bold">28</div>
+                                        <div class="text-gray-400">Status</div>
+                                        <div class="text-green-400">Completed</div>
+                                    </div>
+                                    <button
+                                        class="hide-details-btn text-gray-300 hover:text-white transition-colors flex items-center text-sm uppercase tracking-widest font-bold">
+                                        <i class="fa-solid fa-times mr-2 text-secondary"></i> Hide Details
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Project 2: Apartment Building (Hamburg) -->
+                        <li class="splide__slide">
+                            <div
+                                class="project-card group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-96 mx-2">
+                                <img src="/images/building2.jpg" alt="Alster Ufer Residences"
+                                    class="w-full h-full object-cover transition-transform duration-700" />
+                                <div
+                                    class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+                                    <h3
+                                        class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                        Alster Ufer
+                                    </h3>
+                                    <p
+                                        class="text-gray-300 mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                        Residential • Apartments
+                                    </p>
+                                    <span
+                                        class="text-secondary font-bold uppercase text-sm tracking-wider transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">View
+                                        Details</span>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                                    <h3 class="text-xl font-bold text-white">
+                                        Alster Ufer
+                                    </h3>
+                                    <p class="text-gray-300 text-sm">
+                                        Hamburg, Rotherbaum
+                                    </p>
+                                </div>
+                                <!-- Details View -->
+                                <div
+                                    class="project-details absolute inset-0 bg-black/95 opacity-0 pointer-events-none transition-all duration-300 flex flex-col justify-center items-center p-6 text-center text-white">
+                                    <h3 class="text-xl font-bold text-secondary mb-6">Alster Ufer</h3>
+                                    <div class="grid grid-cols-2 gap-4 text-sm mb-8 w-full max-w-xs">
+                                        <div class="text-gray-400">Year Built</div>
+                                        <div class="font-bold">2017</div>
+                                        <div class="text-gray-400">Area</div>
+                                        <div class="font-bold">12,500 m²</div>
+                                        <div class="text-gray-400">Floors</div>
+                                        <div class="font-bold">18</div>
+                                        <div class="text-gray-400">Status</div>
+                                        <div class="text-green-400">Completed</div>
+                                    </div>
+                                    <button
+                                        class="hide-details-btn text-gray-300 hover:text-white transition-colors flex items-center text-sm uppercase tracking-widest font-bold">
+                                        <i class="fa-solid fa-times mr-2 text-secondary"></i> Hide Details
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Project 3: House (Sylt/North Sea) -->
+                        <li class="splide__slide">
+                            <div
+                                class="project-card group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-96 mx-2">
+                                <img src="/images/house1.jpg" alt="Sylt Coastal Villa"
+                                    class="w-full h-full object-cover transition-transform duration-700" />
+                                <div
+                                    class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+                                    <h3
+                                        class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                        Coastal Villa
+                                    </h3>
+                                    <p
+                                        class="text-gray-300 mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                        Residential • Luxury Home
+                                    </p>
+                                    <span
+                                        class="text-secondary font-bold uppercase text-sm tracking-wider transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">View
+                                        Details</span>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                                    <h3 class="text-xl font-bold text-white">
+                                        Coastal Villa
+                                    </h3>
+                                    <p class="text-gray-300 text-sm">
+                                        Sylt, North Sea
+                                    </p>
+                                </div>
+                                <!-- Details View -->
+                                <div
+                                    class="project-details absolute inset-0 bg-black/95 opacity-0 pointer-events-none transition-all duration-300 flex flex-col justify-center items-center p-6 text-center text-white">
+                                    <h3 class="text-xl font-bold text-secondary mb-6">Coastal Villa</h3>
+                                    <div class="grid grid-cols-2 gap-4 text-sm mb-8 w-full max-w-xs">
+                                        <div class="text-gray-400">Year Built</div>
+                                        <div class="font-bold">2018</div>
+                                        <div class="text-gray-400">Area</div>
+                                        <div class="font-bold">550 m²</div>
+                                        <div class="text-gray-400">Rooms</div>
+                                        <div class="font-bold">8</div>
+                                        <div class="text-gray-400">Status</div>
+                                        <div class="text-green-400">Completed</div>
+                                    </div>
+                                    <button
+                                        class="hide-details-btn text-gray-300 hover:text-white transition-colors flex items-center text-sm uppercase tracking-widest font-bold">
+                                        <i class="fa-solid fa-times mr-2 text-secondary"></i> Hide Details
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Project 4: Office Building (Hamburg) -->
+                        <li class="splide__slide">
+                            <div
+                                class="project-card group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-96 mx-2">
+                                <img src="/images/office1.jpg" alt="HafenCity Tower"
+                                    class="w-full h-full object-cover transition-transform duration-700" />
+                                <div
+                                    class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+                                    <h3
+                                        class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                        HafenCity Tower
+                                    </h3>
+                                    <p
+                                        class="text-gray-300 mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                        Commercial • Office
+                                    </p>
+                                    <span
+                                        class="text-secondary font-bold uppercase text-sm tracking-wider transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">View
+                                        Details</span>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                                    <h3 class="text-xl font-bold text-white">
+                                        HafenCity Tower
+                                    </h3>
+                                    <p class="text-gray-300 text-sm">
+                                        Hamburg, HafenCity
+                                    </p>
+                                </div>
+                                <!-- Details View -->
+                                <div
+                                    class="project-details absolute inset-0 bg-black/95 opacity-0 pointer-events-none transition-all duration-300 flex flex-col justify-center items-center p-6 text-center text-white">
+                                    <h3 class="text-xl font-bold text-secondary mb-6">HafenCity Tower</h3>
+                                    <div class="grid grid-cols-2 gap-4 text-sm mb-8 w-full max-w-xs">
+                                        <div class="text-gray-400">Year Built</div>
+                                        <div class="font-bold">2023</div>
+                                        <div class="text-gray-400">Area</div>
+                                        <div class="font-bold">32,000 m²</div>
+                                        <div class="text-gray-400">Floors</div>
+                                        <div class="font-bold">20</div>
+                                        <div class="text-gray-400">Status</div>
+                                        <div class="text-green-400">Completed</div>
+                                    </div>
+                                    <button
+                                        class="hide-details-btn text-gray-300 hover:text-white transition-colors flex items-center text-sm uppercase tracking-widest font-bold">
+                                        <i class="fa-solid fa-times mr-2 text-secondary"></i> Hide Details
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Project 5: House (Hamburg Suburb) -->
+                        <li class="splide__slide">
+                            <div
+                                class="project-card group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-96 mx-2">
+                                <img src="/images/house2.jpg" alt="Blankenese Hotel"
+                                    class="w-full h-full object-cover transition-transform duration-700" />
+                                <div
+                                    class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+                                    <h3
+                                        class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                        Blankenese Hotel
+                                    </h3>
+                                    <p
+                                        class="text-gray-300 mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                        Commercial • Hotel
+                                    </p>
+                                    <span
+                                        class="text-secondary font-bold uppercase text-sm tracking-wider transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">View
+                                        Details</span>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                                    <h3 class="text-xl font-bold text-white">
+                                        Blankenese Hotel
+                                    </h3>
+                                    <p class="text-gray-300 text-sm">
+                                        Hamburg, Blankenese
+                                    </p>
+                                </div>
+                                <!-- Details View -->
+                                <div
+                                    class="project-details absolute inset-0 bg-black/95 opacity-0 pointer-events-none transition-all duration-300 flex flex-col justify-center items-center p-6 text-center text-white">
+                                    <h3 class="text-xl font-bold text-secondary mb-6">Blankenese Hotel</h3>
+                                    <div class="grid grid-cols-2 gap-4 text-sm mb-8 w-full max-w-xs">
+                                        <div class="text-gray-400">Year Built</div>
+                                        <div class="font-bold">2020</div>
+                                        <div class="text-gray-400">Area</div>
+                                        <div class="font-bold">3,200 m²</div>
+                                        <div class="text-gray-400">Style</div>
+                                        <div class="font-bold">Modern</div>
+                                        <div class="text-gray-400">Status</div>
+                                        <div class="text-green-400">Completed</div>
+                                    </div>
+                                    <button
+                                        class="hide-details-btn text-gray-300 hover:text-white transition-colors flex items-center text-sm uppercase tracking-widest font-bold">
+                                        <i class="fa-solid fa-times mr-2 text-secondary"></i> Hide Details
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Project 6: Office (Hamburg) -->
+                        <li class="splide__slide">
+                            <div
+                                class="project-card group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-96 mx-2">
+                                <img src="/images/office2.jpg" alt="Speicherstadt Loft Offices"
+                                    class="w-full h-full object-cover transition-transform duration-700" />
+                                <div
+                                    class="project-overlay absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+                                    <h3
+                                        class="text-2xl font-bold text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                        Loft Offices
+                                    </h3>
+                                    <p
+                                        class="text-gray-300 mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                        Commercial • Office
+                                    </p>
+                                    <span
+                                        class="text-secondary font-bold uppercase text-sm tracking-wider transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">View
+                                        Details</span>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                                    <h3 class="text-xl font-bold text-white">
+                                        Loft Offices
+                                    </h3>
+                                    <p class="text-gray-300 text-sm">
+                                        Hamburg, Speicherstadt
+                                    </p>
+                                </div>
+                                <!-- Details View -->
+                                <div
+                                    class="project-details absolute inset-0 bg-black/95 opacity-0 pointer-events-none transition-all duration-300 flex flex-col justify-center items-center p-6 text-center text-white">
+                                    <h3 class="text-xl font-bold text-secondary mb-6">Loft Offices</h3>
+                                    <div class="grid grid-cols-2 gap-4 text-sm mb-8 w-full max-w-xs">
+                                        <div class="text-gray-400">Year Built</div>
+                                        <div class="font-bold">2025</div>
+                                        <div class="text-gray-400">Area</div>
+                                        <div class="font-bold">5,500 m²</div>
+                                        <div class="text-gray-400">Type</div>
+                                        <div class="font-bold">Office Building</div>
+                                        <div class="text-gray-400">Status</div>
+                                        <div class="text-green-400">Completed</div>
+                                    </div>
+                                    <button
+                                        class="hide-details-btn text-gray-300 hover:text-white transition-colors flex items-center text-sm uppercase tracking-widest font-bold">
+                                        <i class="fa-solid fa-times mr-2 text-secondary"></i> Hide Details
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="mb-8">
-                    <label class="block text-left text-sm font-bold text-gray-700 mb-2">Message</label>
-                    <textarea rows="4"
-                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-nord-blue focus:border-transparent transition-all bg-gray-50 focus:bg-white"></textarea>
-                </div>
-                <button type="button"
-                    class="w-full bg-nord-blue text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition-colors shadow-lg active:transform active:translate-y-0.5">SEND
-                    MESSAGE</button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <span class="text-2xl font-bold text-white tracking-wider">NORDBAU</span>
+    <!-- START: Process / Blueprint Section -->
+    <section id="process" class="py-24 bg-primary relative overflow-hidden border-t border-gray-800">
+        <!-- Custom CSS for this section only -->
+        <style>
+            .blueprint-grid {
+                background-size: 40px 40px;
+                background-image:
+                    linear-gradient(to right,
+                        rgba(255, 255, 255, 0.05) 1px,
+                        transparent 1px),
+                    linear-gradient(to bottom,
+                        rgba(255, 255, 255, 0.05) 1px,
+                        transparent 1px);
+            }
+
+            .flow-line {
+                stroke-dasharray: 20;
+                animation: dashFlow 30s linear infinite;
+            }
+
+            @keyframes dashFlow {
+                to {
+                    stroke-dashoffset: -1000;
+                }
+            }
+
+            /* Hover effect for the steps */
+            .step-card:hover .step-icon {
+                background-color: #ffb800;
+                /* Secondary Color */
+                color: #1a1a1a;
+                /* Primary Color */
+                transform: scale(1.1);
+                box-shadow: 0 0 20px rgba(255, 184, 0, 0.4);
+            }
+
+            .step-card:hover .step-number {
+                color: #ffb800;
+            }
+        </style>
+
+        <!-- Background Grid -->
+        <div class="absolute inset-0 blueprint-grid opacity-50 pointer-events-none"></div>
+
+        <!-- Decorative Corner Marks (Blueprint style) -->
+        <div class="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-secondary/30"></div>
+        <div class="absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-secondary/30"></div>
+        <div class="absolute bottom-0 left-0 w-16 h-16 border-b-2 border-l-2 border-secondary/30"></div>
+        <div class="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-secondary/30"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h4 class="text-secondary font-bold uppercase tracking-wider mb-2">
+                    How We Work
+                </h4>
+                <h2 class="text-4xl font-bold text-white">
+                    The Nordbau Blueprint
+                </h2>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+                    A methodical, transparent approach to construction. From
+                    the first sketch to the final key handover.
+                </p>
             </div>
-            <div class="text-sm">
-                <p>&copy; 2026 Nordbau Group. All rights reserved.</p>
+
+            <!-- Desktop Connector SVG (Hidden on Mobile) -->
+            <div class="hidden md:block absolute top-[280px] left-0 w-full h-20 pointer-events-none z-0">
+                <svg class="w-full h-full" preserveAspectRatio="none">
+                    <!-- Glowing animated line path connecting the 4 steps -->
+                    <path d="M 0,40 L 10000,40" stroke="#374151" stroke-width="2" />
+                    <path d="M 0,40 L 10000,40" stroke="#FFB800" stroke-width="2" class="flow-line opacity-50" />
+                </svg>
+            </div>
+
+            <!-- Steps Container -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                <!-- Step 1 -->
+                <div class="step-card group relative" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="step-icon w-20 h-20 rounded-full border-2 border-secondary bg-gray-900 flex items-center justify-center text-white text-2xl transition-all duration-300 mb-6 relative z-10">
+                            <!-- Blueprint Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <div
+                            class="step-number text-5xl font-extrabold text-gray-800 absolute top-0 right-10 -z-10 transition-colors duration-300 select-none opacity-50 md:opacity-100">
+                            01
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">
+                            Planning
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            We analyze the site, budget, and requirements to
+                            create a feasibility study and initial schematic
+                            designs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card group relative" data-aos="fade-up" data-aos-delay="150">
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="step-icon w-20 h-20 rounded-full border-2 border-secondary bg-gray-900 flex items-center justify-center text-white text-2xl transition-all duration-300 mb-6 relative z-10">
+                            <!-- Drafting Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                            </svg>
+                        </div>
+                        <div
+                            class="step-number text-5xl font-extrabold text-gray-800 absolute top-0 right-10 -z-10 transition-colors duration-300 select-none opacity-50 md:opacity-100">
+                            02
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">
+                            Engineering
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Structural calculations and detailed blueprints
+                            are finalized. We obtain necessary permits and
+                            green certifications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card group relative" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="step-icon w-20 h-20 rounded-full border-2 border-secondary bg-gray-900 flex items-center justify-center text-white text-2xl transition-all duration-300 mb-6 relative z-10">
+                            <!-- Construction Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                        </div>
+                        <div
+                            class="step-number text-5xl font-extrabold text-gray-800 absolute top-0 right-10 -z-10 transition-colors duration-300 select-none opacity-50 md:opacity-100">
+                            03
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">
+                            Construction
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Groundbreak to topping off. Our project managers
+                            ensure daily progress while maintaining strict
+                            safety protocols.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step-card group relative" data-aos="fade-up" data-aos-delay="450">
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="step-icon w-20 h-20 rounded-full border-2 border-secondary bg-gray-900 flex items-center justify-center text-white text-2xl transition-all duration-300 mb-6 relative z-10">
+                            <!-- Key Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+                            </svg>
+                        </div>
+                        <div
+                            class="step-number text-5xl font-extrabold text-gray-800 absolute top-0 right-10 -z-10 transition-colors duration-300 select-none opacity-50 md:opacity-100">
+                            04
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">
+                            Handover
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Final inspections and walk-throughs. We hand
+                            over the keys and provide long-term maintenance
+                            documentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Process / Blueprint Section -->
+
+    <!-- Testimonial -->
+    <section class="py-20 bg-primary relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-secondary rounded-full opacity-10 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-secondary rounded-full opacity-10 blur-3xl">
+        </div>
+
+        <div id="testimonial-carousel" class="splide max-w-4xl mx-auto px-4 relative z-10" data-aos="zoom-in">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <!-- Testimonial 1 -->
+                    <li class="splide__slide text-center">
+                        <i class="fa-solid fa-quote-left text-5xl text-secondary mb-8 opacity-50"></i>
+                        <p class="text-2xl md:text-3xl text-white font-medium italic mb-8 leading-relaxed">
+                            "Nordbau Group transformed our headquarters into a
+                            modern masterpiece. Their attention to detail and commitment
+                            to the timeline were unprecedented in our experience with
+                            contractors."
+                        </p>
+                        <div class="flex items-center justify-center space-x-4">
+                            <div class="text-left">
+                                <div class="text-white font-bold">Franz Hermann</div>
+                                <div class="text-gray-400 text-sm">
+                                    CEO, Altasport
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Testimonial 2 -->
+                    <li class="splide__slide text-center">
+                        <i class="fa-solid fa-quote-left text-5xl text-secondary mb-8 opacity-50"></i>
+                        <p class="text-2xl md:text-3xl text-white font-medium italic mb-8 leading-relaxed">
+                            "The logistics center they built for us in Hamburg Harbor is state-of-the-art.
+                            Efficiency has improved by 40% thanks to the intelligent layout and
+                            robust construction quality."
+                        </p>
+                        <div class="flex items-center justify-center space-x-4">
+                            <div class="text-left">
+                                <div class="text-white font-bold">Thomas Müller</div>
+                                <div class="text-gray-400 text-sm">
+                                    Operations Director, Hamburg Logistics
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Testimonial 3 -->
+                    <li class="splide__slide text-center">
+                        <i class="fa-solid fa-quote-left text-5xl text-secondary mb-8 opacity-50"></i>
+                        <p class="text-2xl md:text-3xl text-white font-medium italic mb-8 leading-relaxed">
+                            "Restoring our historic Blankenese villa was a delicate project.
+                            Nordbau treated the heritage structure with immense respect while
+                            integrating modern amenities flawlessly."
+                        </p>
+                        <div class="flex items-center justify-center space-x-4">
+                            <div class="text-left">
+                                <div class="text-white font-bold">Sophie Weber</div>
+                                <div class="text-gray-400 text-sm">
+                                    Private Client
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#111] text-white relative border-t border-gray-800">
+        <!-- 1. Background Container for the Crane (Handles overflow so SVG doesn't break layout) -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+            <!-- Crane SVG: Positioned lower and further right -->
+            <div class="absolute bottom-0 right-0 transform translate-x-1/6 translate-y-1/6 opacity-10">
+                <svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Tower -->
+                    <path d="M200 600V100" stroke="white" stroke-width="4" />
+                    <!-- Jib (Long Arm) -->
+                    <path d="M200 120H550" stroke="white" stroke-width="4" />
+                    <!-- Counter Jib (Short Arm) -->
+                    <path d="M200 120H100" stroke="white" stroke-width="4" />
+                    <!-- Counterweight -->
+                    <rect x="100" y="120" width="40" height="30" fill="white" fill-opacity="0.5" />
+                    <!-- Cab -->
+                    <rect x="180" y="80" width="40" height="40" stroke="white" stroke-width="2" />
+                    <!-- Top Support Triangle -->
+                    <path d="M200 120L200 50L350 120" stroke="white" stroke-width="2" />
+                    <path d="M200 50L100 120" stroke="white" stroke-width="2" />
+                    <!-- Hook Line -->
+                    <path d="M500 120V300" stroke="white" stroke-width="2" stroke-dasharray="10 10" />
+                    <!-- Hook -->
+                    <path d="M500 300C500 310 510 320 500 330" stroke="white" stroke-width="4" stroke-linecap="round" />
+                    <!-- Cross bracing in tower -->
+                    <path d="M200 550L240 500H160L200 450L240 400H160L200 350L240 300H160L200 250L240 200H160L200 150"
+                        stroke="white" stroke-width="1" opacity="0.5" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-12 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Column 1: Brand -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0 flex items-center">
+                            <span class="text-2xl font-bold text-nord-blue tracking-wider">NORDBAU</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Setting the gold standard in construction since
+                        2011. We don't just build structures; we build
+                        legacies through engineering excellence and safety.
+                    </p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h5 class="text-white font-bold text-lg mb-6 border-l-4 border-secondary pl-3">
+                        Company
+                    </h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li>
+                            <a href="#about" class="hover:text-secondary transition-colors flex items-center group">
+                                <span
+                                    class="w-0 group-hover:w-2 h-[1px] bg-secondary mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="hover:text-secondary transition-colors flex items-center group">
+                                <span
+                                    class="w-0 group-hover:w-2 h-[1px] bg-secondary mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                                Our Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services" class="hover:text-secondary transition-colors flex items-center group">
+                                <span
+                                    class="w-0 group-hover:w-2 h-[1px] bg-secondary mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-secondary transition-colors flex items-center group">
+                                <span
+                                    class="w-0 group-hover:w-2 h-[1px] bg-secondary mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                                Careers
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div>
+                    <h5 class="text-white font-bold text-lg mb-6 border-l-4 border-secondary pl-3">
+                        Contact
+                    </h5>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-location-dot mt-1 text-secondary mr-3"></i>
+                            <span>123 Construction Blvd, Suite 100<br />Metropolis,
+                                NY 10012</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone text-secondary mr-3"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope text-secondary mr-3"></i>
+                            <span>contact@nordbau-group.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-clock text-secondary mr-3"></i>
+                            <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> Nordbau Group. All rights
+                    reserved.
+                </p>
             </div>
         </div>
     </footer>
-
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 
 </html>

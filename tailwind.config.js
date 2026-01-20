@@ -3,15 +3,21 @@ module.exports = {
         "./index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
+    safelist: [
+        {
+            pattern: /^splide__(pagination|arrow|track|list|slide)/,
+        },
+    ],
     theme: {
         extend: {
+            fontFamily: {
+                sans: ["Manrope", "sans-serif"],
+            },
             colors: {
-                nord: {
-                    blue: '#004c8f',
-                    dark: '#1a1a1a',
-                    light: '#f5f5f5',
-                }
-            }
+                primary: "#1a1a1a",
+                secondary: "#FFB800", // Construction Yellow/Orange
+                accent: "#F3F4F6",
+            },
         },
     },
     plugins: [],

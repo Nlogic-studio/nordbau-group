@@ -44,6 +44,48 @@ const updateContent = (lang) => {
 };
 
 $(document).ready(() => {
+    AOS.init();
+
+    // Initialize Splide Carousel
+    new Splide('#project-carousel', {
+        type: 'loop',
+        perPage: 3,
+        gap: '2rem',
+        autoplay: false,
+        arrows: true,
+        pagination: true,
+        breakpoints: {
+            1024: {
+                perPage: 2,
+            },
+            768: {
+                perPage: 1,
+            },
+        },
+    }).mount();
+
+    // Project Card Details Toggle
+    $(document).on('click', '.project-card', function () {
+        // Remove active class from all other cards
+        $('.project-card').not(this).removeClass('details-active');
+        // Toggle on clicked card
+        $(this).toggleClass('details-active');
+    });
+
+    $(document).on('click', '.hide-details-btn', function (e) {
+        e.stopPropagation(); // Prevent triggering the card click
+        $(this).closest('.project-card').removeClass('details-active');
+    });
+
+    // Initialize Testimonial Carousel
+    new Splide('#testimonial-carousel', {
+        type: 'slide',
+        autoplay: true,
+        interval: 5000,
+        arrows: false,
+        pagination: true,
+    }).mount();
+
     updateContent(currentLang);
 
     $('#lang-toggle').on('click', (e) => {
@@ -56,19 +98,25 @@ $(document).ready(() => {
         }
     });
 
-    // Also bind mobile toggle
-    $('#lang-toggle-mobile').on('click', (e) => {
-        e.preventDefault();
-        const newLang = currentLang === 'de' ? 'en' : 'de';
-        if (newLang === 'en') {
-            window.location.href = '/en';
+    // Navbar Transition
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add("bg-primary", "shadow-lg");
+            navbar.classList.remove("bg-transparent", "py-4");
+            navbar.classList.add("py-2");
         } else {
-            window.location.href = '/';
+            navbar.classList.remove("bg-primary", "shadow-lg");
+            navbar.classList.add("bg-transparent", "py-4");
+            navbar.classList.remove("py-2");
         }
     });
 
     // Mobile Menu Toggle
-    $('#mobile-menu-btn').on('click', () => {
-        $('#mobile-menu').toggleClass('hidden');
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
     });
 });
