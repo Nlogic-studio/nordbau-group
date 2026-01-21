@@ -6,8 +6,10 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Build output
-# dist
-# dist-ssr
+dist
+dist-ssr
+# Keep docs folder for GitHub Pages deployment
+# docs/
 
 # Local Environment Variables
 .env

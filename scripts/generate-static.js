@@ -91,16 +91,16 @@ const rootDir = path.resolve(__dirname, '..');
 //
 // I'll update the script to use `dist/index.html` as source.
 
-const distDir = path.join(rootDir, 'dist');
-const enDir = path.join(distDir, 'en');
-const sourceHtmlPath = path.join(distDir, 'index.html');
+const docsDir = path.join(rootDir, 'docs');
+const enDir = path.join(docsDir, 'en');
+const sourceHtmlPath = path.join(docsDir, 'index.html');
 
-if (!fs.existsSync(distDir)) {
-    console.error("dist folder not found. Run 'npm run build' first.");
+if (!fs.existsSync(docsDir)) {
+    console.error("docs folder not found. Run 'npm run build' first.");
     process.exit(1);
 }
 if (!fs.existsSync(sourceHtmlPath)) {
-    console.error("dist/index.html not found.");
+    console.error("docs/index.html not found.");
     process.exit(1);
 }
 if (!fs.existsSync(enDir)) {
@@ -224,4 +224,4 @@ if (match) {
 }
 
 fs.writeFileSync(path.join(enDir, 'index.html'), html);
-console.log('Generated dist/en/index.html');
+console.log('Generated docs/en/index.html');
