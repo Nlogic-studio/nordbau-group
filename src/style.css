@@ -25,7 +25,7 @@
     .hero-bg {
         background-image:
             linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url("/images/bg2.jpg");
+            url("/images/bg2.webp");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

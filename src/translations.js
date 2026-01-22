@@ -58,6 +58,13 @@ export const translations = {
                 style: "Stil",
                 type: "Typ"
             },
+            descriptions: {
+                residential_skyscraper: "Wohnen • Wolkenkratzer",
+                residential_apartments: "Wohnen • Apartments",
+                residential_villa: "Wohnen • Luxusvilla",
+                commercial_office: "Gewerbe • Büro",
+                commercial_hotel: "Gewerbe • Hotel"
+            },
             items: [
                 // Descriptions for specific projects if needed dynamically, currently localized in HTML
             ]
@@ -207,6 +214,13 @@ export const translations = {
                 rooms: "Rooms",
                 style: "Style",
                 type: "Type"
+            },
+            descriptions: {
+                residential_skyscraper: "Living • Skyscraper",
+                residential_apartments: "Living • Apartments",
+                residential_villa: "Living • Luxury Villa",
+                commercial_office: "Commercial • Office",
+                commercial_hotel: "Commercial • Hotel"
             },
             items: []
         },
