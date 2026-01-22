@@ -15,7 +15,7 @@ module.exports = {
             },
             colors: {
                 primary: "#1a1a1a",
-                secondary: "#FFB800", // Construction Yellow/Orange
+                secondary: "#FFB800",
                 accent: "#F3F4F6",
             },
         },
