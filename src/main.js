@@ -127,7 +127,7 @@ $(document).ready(() => {
 
     updateContent(currentLang);
 
-    $('#lang-toggle').on('click', (e) => {
+    $('#lang-toggle, #lang-toggle-mobile').on('click', (e) => {
         e.preventDefault();
         const newLang = currentLang === 'de' ? 'en' : 'de';
         if (newLang === 'en') {
