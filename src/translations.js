@@ -22,9 +22,9 @@ export const translations = {
         },
         about: {
             subtitle: "Über Nordbau Group",
-            title: "Wir bauen nicht nur Strukturen, <br>Wir bauen Vertrauen.",
-            desc: "Gegründet auf den Prinzipien von Integrität, Innovation und Sicherheit, hat sich die Nordbau Group als führendes Unternehmen in der Branche etabliert. Wir kümmern uns mit Präzision und Sorgfalt um jeden Aspekt des Bauprozesses und sorgen dafür, dass Ihre Vision Realität wird.",
-            desc2: "Unser Team aus zertifizierten Fachleuten widmet sich der termingerechten und budgetgerechten Umsetzung von Projekten unter Einsatz modernster Technologien und nachhaltiger Praktiken.",
+            title: "Wir bauen nicht nur Strukturen, <br>Wir schaffen Vertrauen.",
+            desc: "Auf den Werten Integrität, Innovation und Sicherheit aufgebaut, hat sich die Nordbau Group als eines der führenden Unternehmen der Branche etabliert. Wir begleiten jedes Bauprojekt mit höchster Präzision und Sorgfalt – von der Planung bis zur Umsetzung – und machen Ihre Vision zur Realität.",
+            desc2: "Unser Team aus zertifizierten Fachkräften steht für eine termingerechte und kosteneffiziente Umsetzung Ihrer Projekte und setzt dabei auf modernste Technologien sowie nachhaltige Bauweisen.",
             li1: "Lizenzierte & Versicherte Profis",
             li2: "Höchste Sicherheitsstandards",
             li3: "Umweltfreundliche Baumethoden"
@@ -138,11 +138,11 @@ export const translations = {
             title: "Kontaktieren Sie uns",
             desc: "Bereit für Ihr nächstes Projekt? Wir freuen uns auf Sie.",
             form: {
-                name: "Ihr Name",
-                email: "Ihre E-Mail",
+                name: "Name",
+                email: "E-Mail",
                 phone: "Telefonnummer",
                 subject: "Betreff",
-                message: "Ihre Nachricht",
+                message: "Nachricht",
                 submit: "Nachricht Senden",
                 success: "Vielen Dank! Ihre Nachricht wurde gesendet."
             },
