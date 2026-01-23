@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="preload" href="/images/bg2.webp" as="image">
     <link rel="stylesheet" href="/src/style.css">
 </head>
 
@@ -85,8 +86,17 @@
     </nav>
 
     <main>
-        <section id="home" class="hero-bg h-screen flex items-center justify-center relative overflow-hidden">
-            <div class="text-center px-4 max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+        <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="fixed inset-0 -z-10">
+                <picture>
+                    <source media="(min-width: 1280px)" srcset="/images/bg2-optimized.webp">
+                    <source media="(min-width: 768px)" srcset="/images/bg2-optimized-medium.webp">
+                    <img src="/images/bg2-optimized-small.webp" alt="Construction Skyline" class="w-full h-full object-cover" fetchpriority="high" decoding="async">
+                </picture>
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
                 <p class="text-secondary font-bold tracking-widest uppercase mb-4 text-sm md:text-base">
                     Building The Future Since 2011
                 </p>
